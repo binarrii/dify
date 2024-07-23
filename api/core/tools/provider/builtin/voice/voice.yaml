@@ -1,0 +1,63 @@
+identity:
+  author: binarii<dupp@wasu.com>
+  name: voice
+  label:
+    en_US: Voice
+    zh_Hans: 语音处理
+  description:
+    en_US: Voice Processing Tools
+    zh_Hans: 语音处理工具
+  icon: icon.png
+  tags:
+    - productivity
+    - utilities
+credentials_for_provider:
+  asr_base_url:
+    type: text-input
+    required: true
+    label:
+      en_US: ASR service base URL
+      zh_Hans: ASR service base URL
+    help:
+      en_US: Please input your ASR service base URL
+      zh_Hans: 请输入你的 ASR service base URL
+    placeholder:
+      en_US: Please input your ASR service base URL
+      zh_Hans: 请输入你的 ASR service base URL
+  tts_base_url:
+    type: text-input
+    required: true
+    label:
+      en_US: TTS service base URL
+      zh_Hans: TTS service base URL
+    help:
+      en_US: Please input your TTS service base URL
+      zh_Hans: 请输入你的 TTS service base URL
+    placeholder:
+      en_US: Please input your TTS service base URL
+      zh_Hans: 请输入你的 TTS service base URL
+  sotrage_root:
+    type: text-input
+    required: false
+    default: '/nas/dify/audio'
+    label:
+      en_US: Sotrage Root Path
+      zh_Hans: 存储根路径
+    help:
+      en_US: Please input your sotrage root path
+      zh_Hans: 请输入你的 sotrage root path
+    placeholder:
+      en_US: Please input your sotrage root path
+      zh_Hans: 请输入你的 sotrage root path
+  output_url_prefix:
+    type: text-input
+    required: true
+    label:
+      en_US: Output URL Prefix
+      zh_Hans: 输出的音频文件 URL 前缀
+    help:
+      en_US: Please input your output url prefix
+      zh_Hans: 请输入你的 output url prefix
+    placeholder:
+      en_US: Please input your output url prefix
+      zh_Hans: 请输入你的 output url prefix
