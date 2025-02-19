@@ -1,0 +1,23 @@
+identity:
+  author: binarii<dupp@wasu.com>
+  name: asr
+  label:
+    en_US: ASR
+    zh_Hans: 语音识别
+description:
+  human:
+    en_US: A tool for recognizing text from speech.
+    zh_Hans: 一个用于从语音中识别文本的工具。
+  llm: A tool for recognizing text from speech.
+parameters:
+  - name: wav_file
+    type: string
+    required: true
+    label:
+      en_US: Wav File
+      zh_Hans: 语音文件
+    human_description:
+      en_US: Speech to be recognized.
+      zh_Hans: 待识别语音。
+    llm_description: Speech to be recognized.
+    form: llm

@@ -1,0 +1,189 @@
+identity:
+  author: binarii<dupp@wasu.com>
+  name: comfyapi
+  label:
+    en_US: ComfyApi
+    zh_Hans: ComfyApi
+description:
+  human:
+    en_US: A Friendly ComfyUI API.
+    zh_Hans: 更友好的 ComfyUI API。
+  llm: A Friendly ComfyUI API.
+parameters:
+  - name: workflow
+    type: string
+    required: true
+    label:
+      en_US: Workflow name
+      zh_Hans: 工作流名称
+    human_description:
+      en_US: The name of the workflow to be used.
+      zh_Hans: 要使用的工作流的名字。
+    llm_description: The name of the workflow to be used.
+    form: llm
+  - name: prompt
+    type: string
+    required: false
+    label:
+      en_US: Prompt
+      zh_Hans: 提示词
+    human_description:
+      en_US: Prompts for generating images.
+      zh_Hans: 用于生成图片的提示词。
+    llm_description: Prompts for generating images.
+    form: llm
+  - name: expand
+    type: string
+    required: false
+    label:
+      en_US: Expand the Prompt (boolean)
+      zh_Hans: 是否扩写
+    human_description:
+      en_US: Whether to expand the prompt.
+      zh_Hans: 是否扩写提示词。
+    llm_description: Whether to expand the prompt.
+    form: llm
+  - name: image
+    type: string
+    required: false
+    label:
+      en_US: Reference Image (file)
+      zh_Hans: 参考图片（文件）
+    human_description:
+      en_US: Reference image used for image generation.
+      zh_Hans: 图生图时使用的参考图片。
+    llm_description: Reference image used for image generation.
+    form: llm
+  - name: imagePath
+    type: string
+    required: false
+    label:
+      en_US: Reference Image (file path)
+      zh_Hans: 参考图片（文件路径）
+    human_description:
+      en_US: Reference image used for image generation.
+      zh_Hans: 图生图时使用的参考图片。
+    llm_description: Reference image used for image generation.
+    form: llm
+  - name: userGender
+    type: string
+    required: false
+    label:
+      en_US: Gender
+      zh_Hans: 性别
+    human_description:
+      en_US: Specify the character's gender when generating character images.
+      zh_Hans: 生成人物图片时指定人物性别。
+    llm_description: Specify the character's gender when generating character images.
+    form: llm
+  - name: batchSize
+    type: string
+    required: false
+    label:
+      en_US: Number of images
+      zh_Hans: 数量
+    human_description:
+      en_US: Number of images to be generated.
+      zh_Hans: 生成的图片数量。
+    llm_description: Number of images to be generated.
+    form: llm
+  - name: lora
+    type: string
+    required: false
+    label:
+      en_US: LORA
+      zh_Hans: LORA
+    human_description:
+      en_US: LORA
+      zh_Hans: LORA
+    llm_description: LORA
+    form: llm
+  - name: loraWeight
+    type: string
+    required: false
+    label:
+      en_US: LORA Weight
+      zh_Hans: LORA 权重
+    human_description:
+      en_US: The weight of lora.
+      zh_Hans: LORA 权重。
+    llm_description: The weight of lora.
+    form: llm
+  - name: seed
+    type: string
+    required: false
+    label:
+      en_US: Seed
+      zh_Hans: 种子值
+    human_description:
+      en_US: Seed, which can be a random number.
+      zh_Hans: 种子，可以是一个随机数。
+    llm_description: Seed, which can be a random number.
+    form: llm
+    default: -1
+  - name: scaleBy
+    type: string
+    required: false
+    label:
+      en_US: Scale Rate
+      zh_Hans: 变换比例
+    human_description:
+      en_US: The scale ratio.
+      zh_Hans: 变换比例。
+    llm_description: The scale ratio.
+    form: llm
+  - name: triggerWord
+    type: string
+    required: false
+    label:
+      en_US: Trigger Word
+      zh_Hans: 触发词
+    human_description:
+      en_US: The trigger word.
+      zh_Hans: 触发词。
+    llm_description: The trigger word.
+    form: llm
+  - name: negtivePrompt
+    type: string
+    required: false
+    label:
+      en_US: Negtive Prompt
+      zh_Hans: 负向提示词
+    human_description:
+      en_US: The negtive prompt.
+      zh_Hans: 负向提示词。
+    llm_description: The negtive prompt.
+    form: llm
+  - name: positivePicturePrompt
+    type: string
+    required: false
+    label:
+      en_US: Positive Prompt
+      zh_Hans: 正向提示词
+    human_description:
+      en_US: The positive prompt.
+      zh_Hans: 正向提示词。
+    llm_description: The positive prompt.
+    form: llm
+  - name: singleFaceFixPrompt
+    type: string
+    required: false
+    label:
+      en_US: Single Face Fix Prompt
+      # zh_Hans:
+    human_description:
+      en_US: Single Face Fix Prompt.
+      # zh_Hans:
+    llm_description: Single Face Fix Prompt.
+    form: llm
+  - name: characterNum
+    type: string
+    required: false
+    label:
+      en_US: Character Number
+      zh_Hans: 人物数量
+    human_description:
+      en_US: The number of characters.
+      zh_Hans: 人物数量。
+    llm_description: The number of characters.
+    form: llm

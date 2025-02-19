@@ -1,0 +1,84 @@
+identity:
+  author: binarii<dupp@wasu.com>
+  name: dalle_webapi
+  label:
+    en_US: DALL·E API Web Edition
+    zh_Hans: DALL·E API 网页版
+description:
+  human:
+    en_US: DALL·E API based on the ChatGPT web edition.
+    zh_Hans: 基于 ChatGPT 网页版的 DALL·E API。
+  llm: DALL·E API based on the ChatGPT web edition.
+parameters:
+  - name: prompt
+    type: string
+    required: true
+    label:
+      en_US: Prompt
+      zh_Hans: 提示词
+    human_description:
+      en_US: Image prompt, you can check the official documentation of DallE 3
+      zh_Hans: 图像提示词，您可以查看 DallE 3 的官方文档
+    llm_description: Image prompt, you can check the official documentation of DallE 3
+    form: llm
+  - name: image
+    type: string
+    required: false
+    label:
+      en_US: Reference image
+      zh_Hans: 参考图片
+    human_description:
+      en_US: Reference image used for image generation
+      zh_Hans: 图生图时使用的参考图片
+    llm_description: Reference image used for image generation
+    form: llm
+  - name: style
+    type: string
+    required: false
+    human_description:
+      en_US: selecting the image style
+      zh_Hans: 图像风格，如动漫、涂鸦、手绘、素描、反乌托邦、粉笔艺术、水彩、表现主义、哥特、立体主义、以花卉制成、水墨、大特写、马赛克、油画、水彩等
+    label:
+      en_US: Image style
+      zh_Hans: 图像风格
+    form: llm
+  - name: size
+    type: string
+    required: false
+    human_description:
+      en_US: selecting the image size
+      zh_Hans: 图像大小，1024x1024, 1792x1024, 1024x1792
+    label:
+      en_US: Image size
+      zh_Hans: 图像大小
+    form: llm
+  - name: n
+    type: string
+    required: false
+    human_description:
+      en_US: The number of images
+      zh_Hans: 图像数量
+    label:
+      en_US: Number of images
+      zh_Hans: 图像数量
+    form: llm
+  - name: async
+    type: string
+    required: false
+    human_description:
+      en_US: Is asynchronous
+      zh_Hans: 是否异步
+    label:
+      en_US: Is asynchronous
+      zh_Hans: 是否异步
+    form: llm
+  - name: notifyUrl
+    type: string
+    required: false
+    human_description:
+      en_US: Notification/Callback URL
+      zh_Hans: 通知/回调地址
+    label:
+      en_US: Notification/Callback URL
+      zh_Hans: 通知/回调地址
+    form: llm

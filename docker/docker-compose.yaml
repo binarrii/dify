@@ -408,6 +408,7 @@ services:
       - redis
     volumes:
       # Mount the storage directory to the container, for storing user files.
+      - /nas/dify:/nas/dify
       - ./volumes/app/storage:/app/api/storage
     networks:
       - ssrf_proxy_network
@@ -431,6 +432,7 @@ services:
       - redis
     volumes:
       # Mount the storage directory to the container, for storing user files.
+      - /nas/dify:/nas/dify
       - ./volumes/app/storage:/app/api/storage
     networks:
       - ssrf_proxy_network
